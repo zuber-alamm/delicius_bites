@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Now - Delicious Bites</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            text-align: center;
+            padding: 20px;
+        }
+        form {
+            background-color: white;
+            padding: 30px;
+            margin: auto;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ff7f50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Order Your Food Now!</h1>
+
+<form action="#" method="post">
+    <input type="text" name="name" placeholder="Your Name" required><br>
+
+    <input type="text" name="address" placeholder="Your Address" required><br>
+
+    <select name="food" required>
+        <option value="">Select Food Item</option>
+        <option value="pizza">Pizza</option>
+        <option value="burger">Burger</option>
+        <option value="salad">Salad</option>
+    </select><br>
+
+    <input type="number" name="quantity" placeholder="Quantity" min="1" required><br>
+
+    <button type="submit">Place Order</button>
+</form>
+
+</body>
+</html>
